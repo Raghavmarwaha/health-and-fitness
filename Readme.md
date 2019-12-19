@@ -1,5 +1,5 @@
-## Women Health and Fitness
-  The main idea behind this project is to create awareness regarding health specially for women. As we know that now a days due to very bussy life people are suffering from many health problems. So this project create awareness regarding health and how to ovecome with health Problems.
+## Health and Fitness
+The main idea behind this project is to create awareness regarding health specially for women. As we know that now a days due to very bussy life people are suffering from many health problems. So this project create awareness regarding health and how to ovecome with health Problems.
 
 
 ## Project instuctions
@@ -7,7 +7,7 @@
   * Clone the repository
   * After cloning, you need to install the XAMPP server 
   * After installing XAMPP server, you need to start the Apache and MySQL
-  * After thiis, go to localhost/navone.html
+  * After this, go to localhost/navone.html
   You can run the project now
 
 
