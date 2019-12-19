@@ -1,0 +1,65 @@
+body
+{
+    background-color: lavender;
+}
+h1
+{
+    color: darkblue;
+    font-size: 40px;
+    text-decoration: underline;
+    padding-top: 38px;
+    font-family: 'Pacifico', cursive;
+}
+.name
+{
+    font-style: italic;
+    font-family: 'Indie Flower', cursive;
+    font-size: 30px;
+    font-weight: 600;
+    text-shadow:1px 1px black;
+    text-decoration: underline;
+    padding-top: 2px;
+}
+.position
+{
+    font-weight: bold;
+    font-size: 20px;
+    font-style: italic;
+    text-shadow: 1px 1px black;
+}
+.contact_us {
+	font-size: 16px;
+    color:black;
+	padding-top:13px;
+	font-style:italic;
+}
+.email_id{
+	font-size: 16px;
+    color:black;
+	font-weight: bold;
+}
+.facebook_link {
+    font-size: 16px;
+    color:black;
+	font-weight: bold;
+}
+.ab
+{
+    padding-top: 36px;
+}
+.homepage
+{
+    text-align: center;
+    color: darkblue;
+    font-size: 14px;
+}
+
+.size
+{
+    text-align: center;
+    color: black;
+    padding-top: 24px;
+    font-size: 15px;
+    text-decoration: underline;
+    font-weight: bold;
+}

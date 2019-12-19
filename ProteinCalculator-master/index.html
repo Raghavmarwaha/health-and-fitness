@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+			PROTEIN CALCULATOR
+		</title>
+	<link rel="stylesheet" href="css/main.css" type="text/css"/>
+	<link rel="stylesheet" href="css/ " type="text/css"/>
+	<link rel="arylesheet" href="css/reset.css" type="text/css"/>
+	<link href='https://fonts.googleapis.com/css?family=PT+Sans:400,400italic' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+	</head>
+	<body>
+	<div id="con_up"><i class="fa  fa-4x fa-level-up" id="up"></i></div> <style> #up{
+			position:fixed;
+			bottom:5px;
+			right:3px;
+			z-index:99999;
+			color:grey;
+		}
+		</style>
+		<!--code here-->
+		<header>
+			<h1 class="head_text">PROTEIN CALCULATOR</h1>
+			<ul id="list">
+				<li><a id="daily">DAILY PROTEIN INTAKE</a></li>
+				<li><a id="require">PROTEIN REQUIREMENTS<a/></li>
+				<li><a id="select">SELECT YOUR PLAN</a></li>
+				<li><a id="body">Tips For Women</a></li>
+			</ul>
+			<aside>
+				<div id="slider">
+				<i class="fa fa-3x fa-angle-double-right right" id="right_adjust"></i>
+				<i class="fa fa-3x fa-angle-double-left left" id="left_adjust"></i>
+					<ul>
+						<li>
+							THE HINDU: <i class="fa ad fa-quote-left"></i>80% of the indian consume less protein than they need.
+						</li>
+						<li>
+							<i class="fa ad fa-quote-left"></i>Poultry India announces launch of all-India protein awareness campaign
+						</li>
+						<li>
+						<i class="fa ad fa-quote-left"></i>Indian diets derive almost 60 % of their protein from cereal
+						</li>
+					</ul>
+				</div>
+			</aside>
+
+		</header>
+		<!--section stats-->
+		<article>
+		<h1 class="detail_text"> <i class="fa fa-user"></i> YOUR DETAILS </h1><style>.detail_text{text-align:center;font-size:40px; color:white;}</style>
+			<label for="name"> NAME:</label>
+			<br/><br/>
+			<input type="text" id="name" name="name" placeholder="Arpit Anand"/>
+			<div id="age_set">
+				<label for="age">YOUR AGE:</label>
+				<br/><br/>
+				<input type="number" id="age" name="age" placeholder="25"/>
+			</div>
+			<div id="height_set">
+				<label for="height">YOUR HEIGHT</label><input id="con_btn" type="button" value="OPEN CONVERTER"/>
+				<br/><br/>
+				<input type="number" id="height" name="height" placeholder="eg 5 ft 6 in is 5.6"/><label> FT</label>
+				<br/><br/>
+				<div class="converter">
+				 FT TO CM CONVERTER: <input type="text" id="ft1"/><input type="button" id="height_click1" value="Go"/><div id="display_height1"></div><br/><br/>
+				CM TO FT CONVERTER:<input type="text" id="ft2"/>	<input type="button" id="height_click2" value="Go"/><div id="display_height2"></div><br/>
+				</div>
+			</div>
+			<div id="weight_set">
+					<label for="weight">YOUR WEIGHT</label>
+					<br/><br/>
+					<input type="number" id="weight" placeholder="20 kg" /><label> KG</label>
+			</div>
+			<div id="activity">
+				<label for="active">ACTIVITY LEVEL*</label>
+				<br/><br/>
+				<select id="active">
+					<option name="normal" id="1">NORMAL ACTIVE LIFE</option>
+					<option name="inter" id="2">ATHLETE , BODYBUILDER</option>
+					<option id="3">EXTREME ADVANCE BODYBUILDER</option>
+				</select>
+
+		<div id="results">
+			<h4>YOUR BMI :<div id="bmi_get"></div></h4>
+			<br/><br/>
+			<h4>YOUR PROTEIN INTAKE :<div id="pro_get"></div></h4>
+
+		</div>
+		</article>
+		<section>
+			<h1 class="detail_text">PROTEIN INTAKE ON DAILY BASIS(food-wise)</h1>
+			<label for="select_intake">HOW MANY MEALS YOU TAKE ?</label>
+			<br/><br/>
+			<input type="number" id="how_many_meals" placeholder="2"/>
+			<br/><br/>
+			<div id="display_meal"></div><style> #display_meal{padding-top:20px;font-family:verdana;width:300px; font-size:20px;}</style>
+			<br/><br/><br/><br/>
+			<div id="duration_meals">
+				<label for="duration_of_meals">DURATION OF MEALS : </label>
+				<br/><br/>
+				<input type="text" id="duration_of_meals" placeholder="2"/>
+			</div>
+			<div id="generate_bmi">
+				<label for="generate_bmi_intake">GENERATE YOU BODY MASS INDEX</label>
+				<br/><br/>
+				<input type="submit" id="generate_bmi_btn" value="GET IT">
+				<br/><br/>
+				<div id="generate_bmi_body">
+				</div>
+				<br/><br/><br/>
+				<label for="generate_bmi_intake">GENERATE YOU DAILY PROTEIN INTAKE</label>
+				<br/><br/>
+				<input type="submit" id="generate_protein_intake" value="GET IT">
+				<br/><br/>
+				<div id="generate_protein_body">
+				</div>
+				<br/><br/>
+			</div>
+			<br/><br/>
+			<div id="foods_protein">
+				<!--code here-->
+				<p class="white"><strong><i class="fa fa-star"></i> FOR PER 100 GMS - 1 , 200 GM  - 2 ETC</strong></P>
+				<div id="breakfast">
+				<h2>BREAKFAST</h2>
+					<h4>EGGS</h4><input type="number" id="eggs" placeholder="eg . 2,3 etc"/> <input type="button" id="eggs_btn"value="ADD"/> <br/>
+					<h4>BREADS</h4><input type="number" id="bread" placeholder="eg . 2,3 etc"/> <input type="button" id="bread_btn"value="ADD"/> <br/>
+					<h4>PARATHAS</h4><input type="number" class="paratha1" placeholder="eg . 2,3 etc"/> <input type="button" class="paratha_btn1"value="ADD"/> <br/>
+					<h4>ALOO / SATOO PARATHAS</h4><input type="number" id="aloo_paratha" placeholder="eg . 2,3 etc"/> <input type="button" id="aloo_paratha_btn"value="ADD"/> <br/>
+					<h4>OASTS AND MILK</h4><input type="number" id="oats_milk" placeholder="eg 200gm  etc"/> <input type="button" id="oats_milk_btn"value="ADD"/> <br/>
+					<h4>A GLASS OF MILK</h4><input type="number" id="milk" placeholder="eg 1 or 2 glass/ etc"/> <input type="button" id="milk_btn"value="ADD"/> <br/>
+					<h4>UPMA/POHAS</h4><input type="number" id="upma" placeholder="eg .200gm etc"/> <input type="button" id="upma_btn"value="ADD"/> <br/>
+					<h4>OMLLETS</h4><input type="number" id="omlet" placeholder="eg . 2,3 etc"/> <input type="button" id="omlet_btn"value="ADD"/> <br/>
+				</div>
+				<div id="lunch">
+					<h2>LUNCH</h2>
+					<h4>A PLATE OF RICE/PULAO</h4><input type="number" class="rice" placeholder="eg 300 gms etc"/> <input type="button" class="rice_btn" value="ADD"/><br/>
+					<h4>ROTI</h4><input type="number" class="roti" placeholder="eg 300 gms etc"/> <input type="button" class="roti_btn" value="ADD"/><br/>
+					<h4>PARATHA</h4><input type="number" class="paratha2" placeholder="eg 300 gms etc"/> <input type="button" class="paratha_btn2" value="ADD"/><br/>
+					<h4>VEGETABLES</h4><input type="number" class="vegetable" placeholder="eg 300 gms etc"/> <input type="button" class="vegetable_btn" value="ADD"/><br/>
+					<h4>DAL/PULSES</h4><input type="number" class="pulses" placeholder="eg 300 gms etc"/> <input type="button" class="pulses_btn" value="ADD"/><br/>
+					<h4>SALADS</h4><input type="number" class="salad" placeholder="eg 300 gms etc"/> <input type="button" class="salad_btn" value="ADD"/><br/>
+					<h4>PAPAD</h4><input type="number" class="papad" placeholder="eg 300 gms etc"/> <input type="button" class="papad_btn" value="ADD"/><br/>
+					<h4>DAHI/MILK PRODUCT</h4><input type="number" class="dahi" placeholder="eg 300 gms etc"/> <input type="button" class="dahi_btn" value="ADD"/><br/>
+
+				</div>
+				<div id="dinner">
+				<h2>DINNER </h2>
+					<h4>ROTI</h4><input type="number" class="roti1" placeholder="eg 2,3 etc"/> <input type="button" class="roti_btn1" value="ADD"/><br/>
+					<h4>A PLATE OF RICE/PULAO</h4><input type="number" class="rice1" placeholder="eg 300 gms etc"/> <input type="button" class="rice_btn1" value="ADD"/><br/>
+					<h4>SWEETS</h4><input type="number" id="meetha" placeholder="eg 2 , 3 etc"/> <input type="button" id="meetha_btn" value="ADD"/><br/>
+					<h4>PARATHA</h4><input type="number" class="paratha3" placeholder="eg 300 gms etc"/> <input type="button" class="paratha_btn3" value="ADD"/><br/>
+					<h4>VEGETABLES</h4><input type="number" class="vegetable1" placeholder="eg 300 gms etc"/> <input type="button" class="vegetable_btn1" value="ADD"/><br/>
+					<h4>DAL/PULSES</h4><input type="number" class="pulses1" placeholder="eg 300 gms etc"/> <input type="button" class="pulses_btn1" value="ADD"/><br/>
+					<h4>SALADS</h4><input type="number" class="salad1" placeholder="eg 300 gms etc"/> <input type="button" class="salad_btn1" value="ADD"/><br/>
+					<h4>DAHI/MILK PRODUCT</h4><input type="number" class="dahi1" placeholder="eg 300 gms etc"/> <input type="button" class="dahi_btn1" value="ADD"/><br/>
+				</div>
+			</div>
+			<span class="clearfix"></span>
+			<div id="confirm_btn"><input type="button" id="confirm" value="DO U WANT TO CONFIRM YOUR FOOD ?"/></div>
+			<h1 id="protein_intake_head"> YOUR PROTEIN INTAKE :</h1> <div id="protein_intake_1"><h1></h1></div><style> #protein_intake_head{color:white;margin-top:500px;font-size:45px;}</style>
+			<p> <i class="fa fa-star"></i> Appended as you continue adding food:</p>
+			<br/>
+		</section>
+		<div id="ur_arena">
+			<h1><i class="fa fa-user"></i> YOUR FINAL RESULTS:</h1><style> #ur_arena h1{text-align:center;}</style>
+			<h2> NAME:<div id="name_append"></div></h2>
+			<h2> AGE:<div id="age_append"></div></h2>
+			<h2> WEIGHT:<div id="weight_append"></div></h2>
+			<h2> HEIGHT:<div id="height_append"></div></h2>
+			<h2> BMI:<div id="bmi_append"></div></h2>
+			<h2>YOUR IDEAL PROTEIN INTAKE:<div id="ideal_append"></div></h2>
+			<h2> YOUR INTAKE PROTEIN :<div id="intake_append"></div></h2>
+			<h2> DIFFERENCE:<div id="diff_append"></div></h2>
+		</div>
+		<nav>
+			<h1 id="bodybuilder"> Women Tips</h1><style> #bodybuilder{
+				text-align:center;
+				font-size:50px;
+			}</style>
+			<ul id="TIPS">
+				SOME TIPS TO EXTEND PROTEIN INTAKES OF WOMEN
+				<li>YOUR PROTEIN INTAKES HAS 1.5 MULTIPLIER SO MORE PROTEIN INTAKE.</li>
+				<li>YOU SHOULD EAT IN 6 MEALS.</li>
+				<li>YOU SHOULD EAT BOILED CHICKEN , IN ORDER TO FULFIL YOUR PROTEIN INTAKE.</li>
+				<li>YOU CAN TAKE SOME ADDED SUPPLEMENTS LIKE PROTEIN SCOOPS TWICE A DAY AS PRE AND POST WORKOUT.</li>
+
+		</nav>
+
+	<script src="js/jquery.js" type="text/javascript"></script>
+	<script src="js/script.js" type="text/javascript"></script>
+	<script src="js/normal.js" type="text/javascript"></script>
+	</body>
+</html>

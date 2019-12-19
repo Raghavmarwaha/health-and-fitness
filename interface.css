@@ -1,0 +1,125 @@
+body {
+    font-family: "Lato", sans-serif;
+    background-color: white;
+
+
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: black;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 75px;
+}
+
+.sidenav p {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 19px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 56px;
+    margin-left: 50px;
+}
+
+#main {
+    transition: margin-left .5s;
+    padding-left: 0.1px;
+    padding-top:30px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 20px;}
+  .sidenav a {font-size: 20px;}
+}
+
+
+.qw
+{
+    text-align: center;
+    font-weight: bold;
+    font-size: 40px;
+    padding-top: 30px;
+    padding-right: 40px;
+     font-family: 'Frijole', cursive;
+font-family: 'Pacifico', cursive;
+font-family: 'Gloria Hallelujah', cursive;
+font-family: 'Dancing Script', cursive;
+text-shadow:2px 2px black;
+}
+
+.tbd
+{
+    text-align: center;
+    font-weight: bold;
+    font-size: 25px;
+
+     font-family: 'Frijole', cursive;
+font-family: 'Pacifico', cursive;
+font-family: 'Gloria Hallelujah', cursive;
+font-family: 'Dancing Script', cursive;
+color:black;
+
+}
+
+.kd
+{
+
+     font-family: 'Frijole', cursive;
+font-family: 'Pacifico', cursive;
+font-family: 'Gloria Hallelujah', cursive;
+font-family: 'Dancing Script', cursive;
+font-size: 35px;
+text-shadow: 1px 1px black;
+margin-top: 10px;
+text-decoration: underline;
+
+}
+li{
+    font-family: 'Dancing Script', cursive;
+    font-size: 17px;
+    font-weight: bold;
+
+
+}
+.bkc
+{
+    text-shadow:1px 1px black;
+    font-weight: bold;
+    font-size: 17px;
+    text-decoration: underline;
+}
+.homepage
+{
+    padding-left: 150px;
+    text-align: center;
+    color: black;
+    font-size: 12px;
+}
+.book
+{
+    color:grey;
+    padding-left: 25px;
+    text-decoration: underline;
+
+    font-size: 13px;
+
+}
