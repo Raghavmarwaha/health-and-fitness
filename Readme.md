@@ -19,8 +19,8 @@ The main idea behind this project is to create awareness regarding health specia
    INSERT INTO `client`(`name`, `city`, `zip_code`, `age`, `Allergies`, `blood_group`, `Disease_history`, `Heart_problems`, `email`, `password`) VALUES ([value-1],[value-2],[value-3],[value-4],[value-5],[value-6],[value-7],[value-8],[value-9],[value-10])
 
 #  Project consisit of -
-   BMI Calculator
-   Protein calculator
-   Health related motivational videos
-   Symptom checker
-   Booking appointment with the help of twilio web API
+   * BMI Calculator
+   * Protein calculator
+   * Health related motivational videos
+   * Symptom checker
+   * Booking appointment with the help of twilio web API
